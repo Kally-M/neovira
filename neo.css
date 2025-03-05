@@ -4,6 +4,8 @@ body{
     box-sizing: border-box;
 }
 .first{
-    background-color: darkolivegreen;
     border: solid black;
+    background-image: url(8d1a674bf9d0cbcd38fabb68c56aab6b\ 1.png);
+    background-size: contain;
 }
+
