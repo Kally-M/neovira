@@ -13,29 +13,79 @@ body{
 .expert-service{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    background-color: rgb(81, 79, 79);
+
 
 }
 .expert-service h1{
     border: solid;
     border-radius: 10px;
+    color: aliceblue;
+    background-color:rgb(21, 20, 20); 
+    padding: 20px;
 }
 .expert-service p{
   
 }
 .comprehensive{
     display: flex;
-    gap: 5px;
+    justify-content: space-between;
+    color: aliceblue;
+    background-color :rgb(21, 20, 20); 
+    border: solid greenyellow;
+    
   
+}
+.itsolution{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:solid red;
 }
 .comprehensive h2{
 gap: 10px;
 }
+.Maitenance p{
+    font-size: x-small;
+    }
+.Maitenance h4{
+        font-size: small;
+        }
+.Network p{
+    font-size: x-small;
+}
+.Network h4{
+    font-size: small;
+}
+.Network {
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+    justify-content: space-between;
+}
 .Maitenance{
-    
+    display: flex;
+    flex-direction: column;
+    border: solid red;
 }
 .Reliable{
+    color: aliceblue;
     display: flex;
+    background-color:rgb(21, 20, 20); 
+    border: solid red;
+    
+}
+.Reliable h1{
+    font-size: small;
+}
+.Reliable img{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 
