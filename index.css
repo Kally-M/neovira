@@ -181,11 +181,7 @@ footer{
 .red{
     border: 2px solid red;
 }
-.flex-gap{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
+
 
 @media (min-width: 767px) and (max-width:1023px){
     .burger-menu{
@@ -315,6 +311,11 @@ footer{
     .section-4th-bg{
         background-color: #F4C843;
     }
+    .flex-gap{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
 
 }
 @media  screen and (min-width: 1024px) {
@@ -384,6 +385,11 @@ footer{
     .logo-cordoned-link{
         flex-direction: row;
         margin: 40px 10px;
+    }
+    .flex-gap{
+        display: flex;
+        align-items: center;
+        gap: 50px;
     }
 
 }
