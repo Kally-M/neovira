@@ -168,9 +168,9 @@ footer{
 .section{
     margin: 25px 0;
 }
-.space-team{
+/* .space-team{
     margin: 40px 0px;
-}
+} */
 .team-img{
     width: 100%;
     height: auto;
@@ -240,10 +240,11 @@ footer{
     }
     .flex-team{
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: space-between;
-        padding: 0 10px;
+        /* padding: 0 10px; */
         gap: 10px;
+        width: 100%;
     }
     .team-img{
         width: 13rem;
@@ -302,7 +303,7 @@ footer{
         margin: 30px 0 40px 0;
         height: 280px;
         width: 400px;
-        padding: 20px 0;
+        padding: 20px 5px;
         box-shadow:10px 10px 20px 5px rgb(63, 63, 63) ;
     }
     .flex-gap{
@@ -325,9 +326,9 @@ footer{
     .visibility{
         display: flex;
     }
-    img{
-        min-width: 33rem;
-        min-height: 47rem;
+    .image img, .image1 img{
+        min-width: 37rem;
+        min-height: 40rem;
         max-width: 40rem;
         max-height: 55rem;
     }
@@ -370,14 +371,14 @@ footer{
     }
     .flex-team{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 10px;
+        align-items: flex-start;
+        /* justify-content: space-between; */
+        /* padding: 0 10px; */
         gap: 10px;
     }
     .team-img{
-        width: 4rem;
-        height: 4rem; 
+        width: 20rem;
+        height: 20rem; 
     }
     .FAQs{
         margin: 0 15%;
@@ -391,5 +392,21 @@ footer{
         align-items: center;
         gap: 50px;
     }
-
+    .headslide{
+        display: flex;
+        align-items: center;
+    }
+    .section{
+        margin: 50px 0;
+    }
+    .section-3th{
+        flex-direction: row;
+        align-items: center;
+    }
+    .fx{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 20px 15px;
+    }
 }
