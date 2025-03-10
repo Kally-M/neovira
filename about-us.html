@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>About us</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header class="flex-space padding">
         <div class="logo-img">
-            <img src="logo.jpeg" alt="logo" class="logo">
+            <img src="logo.png" alt="logo" class="logo">
         </div>
         <div class="nav-link flex-space gap padding visibility">
             <div class="nav-link-homePage">
@@ -19,7 +21,7 @@
                 </a>
             </div>
             <div class="nav-link-servicesPage">
-                <a href="services.html">
+                <a href="neo.html">
                     Services
                 </a>
             </div>
@@ -30,220 +32,137 @@
             </div>
         </div>
         <div class="contact-btn visibility">
-            <button> Contact us </button>
+            <button class="contact"> Contact us </button>
         </div>
         <div class="burger-menu">
-            <i class="bi bi-filter-right">
+            <i class="bi bi-filter-right" id="burger-icon">
 
             </i>
         </div>
     </header>
-    <main class="body flex-center-column">
-        <div class="border">
 
+    <main>
+        <div class="m border about-border"></div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal"></span>
+                <div class="modal-links">
+                    <a href="home.html">Home</a>
+                    <a href="neo.html">Services</a>
+                    <a href="about-us.html">About us</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+            </div>
         </div>
-        <section class="hero-section">
-            <img src="Neovira1.png" alt="image web" class="first-img">
-            <div class="headslide">
-                <h1 class="headslide-title">
-                    High-performance IT solutions for SMEs
-                </h1>
-                <div class="headslide-page ml">
-                    <p class="padding-bottom">
-                        At Neovira Technical Services, we offer tailored IT solutions that 
-                        propel small and medium-sized enterprises (SMEs) to success. 
-                        Discover how our expertise can transform your business in South Africa.
-                    </p>
-                    <div class="headslide-page-buttom flex-gap">
-                        <a href="#">Learn More</a>
-                        <button>Contact</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="section-2th">
-            <div class="section-2th-division1">
-                <p class="section-2th-division1-p1 headslide">
-                    Solutions
-                </p>
-                <div class="tac">
-                    <h2 class="section-2th-division1-h2 tac title-p">
-                        Discover our innovative IT solutions
-                    </h2>
-                    <p class="section-2th-division1-p2">
-                        At Neovira Technical Services, we offer cutting-edge IT solutions to optimize your business performance. 
-                        Our services are designed to meet the specific needs of SMEs
-                    </p>
-                </div>
-            </div>
-            <div class="section-2th-division2 tac title-p flex-gap">
-                <div class="section-2th-division2-division1 bg">
-                    <h2 class="section-2th-division2-division1-titleLevel3 title-p">
-                        Efficient and reliable network management
-                    </h2>
-                    <p class="section-2th-division2-division1-page">
-                        Ensure optimal connectivity with our network management
-                    </p>
-                </div>
-                <div class="section-2th-division2-division2 bg">
-                    <h2 class="section-2th-division2-division2-titleLevel3 title-p">
-                        Cybersecurity to protect your data
-                    </h2>
-                    <p class="section-2th-division2-division2-page">
-                        Protect your business from cyber threats with our security solutions
-                    </p>
-                </div>
-                <div class="section-2th-division2-division3 bg">
-                    <h2 class="section-2th-division2-division3-titleLevel3 title-p">
-                        Cloud solutions tailored to your business
-                    </h2>
-                    <p class="section-2th-division2-division3-page">
-                        Access flexible and scalable Cloud solutions.
-                    </p>
-                </div>
-            </div>
-           
-        </section>
-        <section class="section section-3th gap">
-            <div class="section-3th-division1">
-                <h2 class="section-3th-division1-titleLevel2 title-p">
-                    Discover the benefits of Neovira's IT solutions for SMEs.
-                </h2>
-                <p class="section-3th-division1-page">
-                    Neovira's IT solutions improve the productivity of SMEs through tailored tools. 
-                    Additionally, they ensure enhanced 
-                    security while enabling significant cost reduction
-                </p>
-            </div>
-            <div class="image1">
-                <img src="neovira2.png" alt="neovira agent">
-            </div>
-            
-        </section>
-        <section class="section-4th">
-            <div class="section-4th-division1 tac">
-                <p class="section-4th-division1-p1">
-                    Process
-                </p>
-                <h2 class="section-4th-division1-h2 title-p">
-                    Discover how we implement our solutions
-                </h2>
-                <p class="section-4th-division1-p2">
-                    At Neovira, we believe in a structured approach to implementing IT solutions. 
-                    Each step is designed to ensure a smooth and efficient transition.
-                </p>
-            </div>
-            <div class="section-4th-division2 tac flex-gap">
-                <div class="section-4th-division2-division1 padding bg section-4th-bg">
-                    <h3 class="section-4th-division2-division1-titleLevel3 title-p">
-                        Step 1: Analysis of your business needs
-                    </h3>
-                    <p class="section-2th-division2-division1-page">
-                        We begin by understanding your specific challenges.
-                    </p>
-                </div>
-                <div class="section-4th-division2-division2 padding bg section-4th-bg">
-                    <h3 class="section-4th-division2-division2-titleLevel3 title-p">
-                        Step 2: Design of the customized solution
-                    </h3>
-                    <p class="section-4th-division2-division2-page">
-                        We create a tailor-made solution for you.
-                    </p>
-                </div>
-                <div class="section-4th-division2-division3 padding bg section-4th-bg">
-                    <h3 class="section-4th-division2-division3-titleLevel3 title-p">
-                        Step 3: Implementation and training
-                    </h3>
-                    <p class="section-2tsection-4thh-division2-division3-page">
-                        We deploy the solution and train your team.
-                    </p>
-                </div>
-            </div>
-            <div class="section-4th-division3 btns flex-gap">
-                <a href="#">Learn More</a>
-                <button>Contact</button>
-            </div>
+        <section class="hero-section width">
+            <h1 class="title-p space-left">
+                Welcome to Neovira
+            </h1>
+            <p class="title-p space-left">
+                Empowering SMEs with innovative IT solutions tailored 
+                for high performance and growth in South Africa.
+            </p>
 
         </section>
-        <section class="section-5th gap">
-            <div class="section-5th-division1 headslide gap">
-                <div class="image1">
-                    <img src="neovira3.png" alt="client">
-                </div>
-                <div class="section-5th-division1-pages">
-                    <p class="section-5th-division1-pages-slide1">
-                        "Neovira's solutions have transformed our business. 
-                        Thanks to their expertise, we have improved our operational efficiency."
-                    </p>
-                    <div class="section-5th-division1-pages-namesAndJob rigth">
-                        <p class="section-5th-division1-pages-namesAndJob-names">
-                            Jean Dupont
+        <section class="m section headslide gap">
+            <div class="description">
+                <h2 class="title-p space-left">
+                    Empowering South African SMEs with Innovative IT Solutions for Growth
+                </h2>
+                <p class="title-p space-left">
+                    At Neovira Technical Services, we specialize in high-performance IT 
+                    solutions tailored for small and medium enterprises. Our mission is to drive technological advancement and operational efficiency in businesses across South Africa.
+                </p>
+                <div class="vision-and-values space-left title-p">
+                    <div class="values">
+                        <div class="icons">
+                            <i class="bi-award">
+
+                            </i>
+                        </div>
+                        <h3>
+                            Our values
+                        </h3>
+                        <p>
+                            Integrity, innovation, and customer-centricity guide our approach to every project.
                         </p>
-                        <p class="section-5th-division1-pages-namesAndJob-job">
-                            TechCorp, Director
+                    </div>
+                    <div class="vision">
+                        <div class="icons">
+                            <i class="bi-eye">
+
+                            </i>
+                        </div>
+                        <h3>
+                            Our vision
+                        </h3>
+                        <p>
+                            To be the leading IT partner for SMEs in South Africa and beyond.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="section-5th-division2 headslide">
-                <div class="section-5th-division2-division1 mr">
-                    <h2 class="section-5th-division2-division1-titleLevel2">
-                        Transform your business with us.
-                    </h2>
-                    <p class="section-5th-division2-division1-page2">
-                        Contact us for a free consultation today!
-                    </p>
-                </div>
-                <div class="section-5th-division2-division2 flex-gap">
-                    <a href="#">Learn More </a>
-                    <button>Contact</button>
-                </div>
+            <div class="image">
+                <img src="apropos1.png" alt="#">
             </div>
-        </section>
 
-        <section class="section-6th">
-            <div class="section-6th-division1">
-                <h2 class="section-6th-division1-h2">
-                    Tailor-made IT solutions for SMEs
+        </section>
+        <section class="m section section-3th headslide gap">
+            <div class="description title-p">
+                <div class="icons">
+                    <i class="bi bi-lightbulb">
+
+                    </i>
+                </div>
+                <h2 class="title-p">
+                    Empowering SMEs with innovative IT solutions for sustainable growth and success.
                 </h2>
-                <p class="section-6th-division1-p2">
-                    Our services are designed to optimize your operational efficiency. 
-                    With Neovira, transform your technological challenges into opportunities.
+                <p class="title-p space-left">
+                    At Neovira Technical Services, we believe in integrity, innovation, and collaboration. Our mission is to provide high-performance IT solutions that drive success for small and medium enterprises across South Africa.
                 </p>
             </div>
-            <div class="section-6th-division2 flex-gap">
-                <div class="section-6th-division2-division1 bg">
-                    <h3 class="section-6th-division2-division1-titleLevel3 rigth">
-                        advantages of our IT services
-                    </h3>
-                    <p class="section-6th-division2-division1-page rigth">
-                        We offer 24/7 technical support.
-                    </p>
-                </div>
-                <div class="section-6th-division2-division2 bg">
-                    <h3 class="section-6th-division2-division2-titleLevel3 rigth">
-                        Cutting-edge technology for your business
-                    </h3>
-                    <p class="section-6th-division2-division2-page rigth">
-                        Access high-performance and reliable tools.
-                    </p>
-                </div>
-                <div class="section-6th-division2-division3 bg">
-                    <h3 class="section-6th-division2-division3-titleLevel3 rigth">
-                        A team of experts at your service.
-                    </h3>
-                    <p class="section-6th-division2-division3-page rigth">
-                        We support you every step of the way
-                    </p>
-                </div>
-            </div>
-            <div class="section-6th-division3 flex-gap">
-                <a href="#">Learn More </a>
-                <button>Contact</button>
-            </div>
+            <img src="apropos2.png" alt="#" class="grock">
         </section>
-        <section class="section-5th">
+        <section class="m section headslide gap">
+            <div class="description space-left">
+                <div class="icons title-p">
+                    <i class="bi bi-lightbulb">
+
+                    </i>
+                </div>
+                <h2 class="title-p">
+                    Empowering SMEs with innovative IT solutions for a brighter future.
+                </h2>
+                <p class="title-p">
+                    At Neovira Technical Services, we are dedicated to providing high-performance IT solutions tailored for small and medium enterprises. Our mission is to drive technological advancement and operational efficiency for our clients.
+                </p>
+                <div class="twist title-p">
+                    <div class="twist1 title-p">
+                        <i class="bi bi-gear-wide-connected"></i>
+                        <p> 
+                            Innovation is at the heart of our services. 
+                        </p>
+                    </div>
+                    <div class="twist2 title-p">
+                        <i class="bi bi-building-gear"></i>
+                        <p> 
+                            We value integrity, collaboration, and customer satisfaction. 
+                        </p>
+                    </div>
+                    <div class="twist3 title-p">
+                        <i class="bi bi-globe"></i>
+                        <p> 
+                            Our vision is to transform the IT landscape. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="apropos2.png" alt="#">
+            </div>
+
+        </section>
+        <section class="m section-5th">
             <div class="section-5th-division1-headslide">
                 <p class="section-5th-division1-headslide-page1">
                     Team
@@ -258,7 +177,7 @@
             </div>
             <div class="section-5th-division2-agent-division1 flex-team section">
                 <div class="section-5th-division2-agent-division1-agent1 space-team">
-                    <img src="projectmanager.png" alt="technical director photo" class="team-img" >
+                    <img src="projectmanager.png" alt="technical director photo" class="team-img">
                     <div class="section-5th-division2-agent-division1-agent1-namesAndJob">
                         <p class="section-5th-division2-agent-division1-agent1-namesAndJob-names">Jean Dupont</p>
                         <p class="section-5th-division2-agent-division1-agent1-namesAndJob-job">Technical Director</p>
@@ -272,7 +191,7 @@
                 </div>
 
                 <div class="section-5th-division2-agent-division2">
-                    <img src="projectmanager.png" alt="technical director photo" class="team-img"  >
+                    <img src="projectmanager.png" alt="technical director photo" class="team-img">
                     <div class="section-5th-division2-agent-division3-agent2-namesAndJob">
                         <p class="section-5th-division2-agent-division3-agent2-namesAndJob-names">Thomas Moreau</p>
                         <p class="section-5th-division2-agent-division3-agent2-namesAndJob-job">Project Manager</p>
@@ -285,7 +204,7 @@
                 </div>
 
                 <div class="section-5th-division2-agent-division3 space-team">
-                    <img src="specialistmarketing.png" alt="technical director photo" class="team-img" >
+                    <img src="specialistmarketing.png" alt="technical director photo" class="team-img">
                     <div class="section-5th-division2-agent-division1-agent1-namesAndJob">
                         <p class="section-5th-division2-agent-division1-agent1-namesAndJob-names">Emma Lefèvre</p>
                         <p class="section-5th-division2-agent-division1-agent1-namesAndJob-job">System Analyst</p>
@@ -297,7 +216,7 @@
                     </div>
                 </div>
                 <div class="section-5th-division2-agent-division3 space-team">
-                    <img src="specialistmarketing.png" alt="technical director photo" class="team-img" >
+                    <img src="specialistmarketing.png" alt="technical director photo" class="team-img">
                     <div class="section-5th-division2-agent-division1-agent1-namesAndJob">
                         <p class="section-5th-division2-agent-division1-agent1-namesAndJob-names">Emma Lefèvre</p>
                         <p class="section-5th-division2-agent-division1-agent1-namesAndJob-job">System Analyst</p>
@@ -312,7 +231,7 @@
 
             <div class="section-5th-division3 flex-team section">
                 <div class="section-5th-division3-agent-division1-agent1 space-team">
-                    <img src="devsenior.png" alt="technical director photo" class="team-img" >
+                    <img src="devsenior.png" alt="technical director photo" class="team-img">
                     <div class="section-5th-division3-agent-division1-agent1-namesAndJob">
                         <p class="section-5th-division3-agent-division1-agent1-namesAndJob-names">Lucas Bernard</p>
                         <p class="section-5th-division3-agent-division1-agent1-namesAndJob-job">Senior Developer</p>
@@ -325,7 +244,7 @@
                 </div>
 
                 <div class="section-5th-division3-agent-division2 space-team">
-                    <img src="specialistmarketing.png" alt="technical director photo" class="team-img" >
+                    <img src="specialistmarketing.png" alt="technical director photo" class="team-img">
                     <div class="section-5th-division3-agent-division3-agent2-namesAndJob">
                         <p class="section-5th-division3-agent-division3-agent2-namesAndJob-names">Sophie Martin</p>
                         <p class="section-5th-division3-agent-division3-agent2-namesAndJob-job">Marketing Manager</p>
@@ -338,7 +257,7 @@
                 </div>
 
                 <div class="section-5th-division3-agent-division3 space-team">
-                    <img src="designer.png" alt="technical director photo" class="team-img" >
+                    <img src="designer.png" alt="technical director photo" class="team-img">
                     <div class="section-5th-division3-agent-division1-agent1-namesAndJob">
                         <p class="section-5th-division3-agent-division1-agent1-namesAndJob-names">Victor Simon</p>
                         <p class="section-5th-division3-agent-division1-agent1-namesAndJob-job">UI/UX Designer</p>
@@ -363,13 +282,123 @@
                 </div>
             </div>
         </section>
-          
-    </main>    
+        <section class="FAQs">
+            <div class="title-p tac">
+                <h2 class="padding">
+                    FAQs
+                </h2>
+                <p class="title-p">
+                    Find answers to common questions about Neovira Technical Services and our offerings.
+                </p>
+            </div>
+            <div class="container">
+                <div class="border-faq"></div>
+                <div class="visible-title flex-space">
+                   <h3> What services do you offer?</h3>
+                   <i class="pointer bi bi-chevron-up">
+
+                   </i>
+                </div>
+                <div class="page-toggle">
+                    <p>
+                        We provide high-performance IT solutions tailored for small and medium enterprises. Our services include network management, cybersecurity, and cloud solutions. We aim to empower businesses with the technology they need to thrive.
+                    </p>
+                </div>
+                <div class="border-faq"></div>
+                <div class="visible-title flex-space">
+                   <h3> Who is your team?</h3>
+                   <i class="pointer bi bi-chevron-up">
+
+                   </i>
+                </div>
+                <div class="page-toggle">
+                
+                    <p>
+                        Our team consists of experienced IT professionals dedicated to delivering exceptional service. We prioritize collaboration and innovation to meet our clients' needs. Together, we strive to create effective solutions that drive success.
+                    </p>
+                </div>
+                <div class="border-faq"></div>
+                <div class="visible-title flex-space">
+                   <h3> What is your mission?</h3>
+                   <i class="pointer bi bi-chevron-up">
+
+                   </i>
+                </div>
+                <div class="page-toggle">
+                    <p>
+                        Our mission is to provide cutting-edge IT solutions that enhance operational efficiency for SMEs. We believe in empowering businesses through technology. Our commitment is to support our clients in achieving their goals.
+                    </p>
+                </div>
+                <div class="border-faq"></div>
+                <div class="visible-title flex-space">
+                   <h3>What are your values?</h3>
+                   <i class="pointer bi bi-chevron-up">
+
+                   </i>
+                </div>
+                <div class="page-toggle">
+                    <p>
+                        Integrity, innovation, and customer-centricity are at the core of our values. We strive to build trust with our clients through transparent communication. Our focus is on delivering solutions that truly meet their needs.
+                    </p>
+                </div>
+                <div class="border-faq"></div>
+                <div class="visible-title flex-space">
+                   <h3> How can I contact? </h3>
+                   <i class="pointer bi bi-chevron-up">
+
+                   </i>
+                </div>
+                <div class="page-toggle">
+                    <p>
+                        You can reach us through our contact form or get on whatsApp on the website. Alternatively, feel free to call us directly for immediate assistance. We're here to help you with any inquiries.
+                    </p>
+                </div>
+                <div class="border-faq"></div>
+
+                <div class="end-faq-slide">
+                    <h2 class="tac">
+                        Still have questions?
+                    </h2>
+                    <p class="tac">
+                        We're here to help you!
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+        <section class="m section last-setion space-left flex padding rigth">
+            <div class="title">
+                <h2 class="title-p ">
+                    Get Started with Neovira
+                </h2>
+            </div>
+            <div class="last-slide width">
+                <p>
+                    Ready to elevate your business with cutting-edge IT solutions? Contact us today to discover how Neovira Technical Services can empower your growth.
+                </p>
+                <div class="section-6th-division3 flex-gap">
+                    <a href="#">Learn More</a>
+                    <button class="contact">Contact</button>
+                </div>
+            </div>
+        </section>
+                    
+        <a href="https://wa.me/27607667704?text=Bonjour%20j%27ai%20une%20question%20sur..." 
+            class="whatsapp-btn" 
+            target="_blank"
+            aria-label="Contact WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
     <footer>
-        <div class="logo-cordoned-link space-left">
+        <div class="logo-cordoned-link space-left ">
             <div class="logo-cordoned">
                 <div class="logo-img title-p">
-                    <img src="logo.jpeg" alt="company logo" class="logo">
+                    <img src="logo.png" alt="company logo" class="logo">
                 </div>
                 <div class="adress">
                     <p class="adress-title">
@@ -401,7 +430,7 @@
                     </a>
                 </div>
                 <div class="link-service padding-bottom">
-                    <a href="service.html">
+                    <a href="neo.html">
                         Services
                     </a>
                 </div>
@@ -422,8 +451,7 @@
                 © 2025 Neovira. All rights reserved. 
             </p>
         </div>
-
-    </footer>    
-
+    </footer>
+    
 </body>
 </html>

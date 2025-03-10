@@ -3,27 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="neo.css">
     <title>servicve</title>
+    <link rel="stylesheet" href="neo.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
-    <div class="Empowering">
+    <header class="flex-space padding">
+        <div class="logo-img">
+            <img src="logo.png" alt="logo" class="logo">
+        </div>
+        <div class="nav-link flex-space gap padding visibility">
+            <div class="nav-link-homePage">
+                <a href="home.html"> 
+                    Home
+                </a>
+            </div>
+            <div class="nav-link-servicesPage">
+                <a href="neo.html">
+                    Services
+                </a>
+            </div>
+            <div class="nav-link">
+                <a href="about-us.html">
+                    About us
+                </a>
+            </div>
+        </div>
+        <div class="contact-btn visibility">
+            <button class="contact"> Contact us </button>
+        </div>
+        <div class="burger-menu">
+            <i class="bi bi-filter-right" id="burger-icon">
+
+            </i>
+        </div>
+    </header>
+            <!-- <div class="m border about-border"></div> -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close-modal"></span>
+                    <div class="modal-links">
+                        <a href="home.html">Home</a>
+                        <a href="neo.html">Services</a>
+                        <a href="about-us.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                    </div>
+                </div>
+            </div>
+    <div class="Empowering margin">
         <div class="first">
             <h1>Empowering Your Business with IT Solutions</h1>
             <p>
-             At Neovira Technical Services, we specialize in providing high-performance IT solutions tailored for small and medium enterprises. Our comprehensive services ensure your business operates smoothly and securely in today's digital landscape.
+             At Neovira Technical Services, we specialize in providing high-performance IT solutions tailored for small and medium enterprises. Our comprehensive services ensure your business operates smoothly and securely in today’s digital landscape.
              </p>
         </div>
-                <button type="button">Learn More</button>  
-                <button type="button">Contact</button> 
+                <a>Learn More</a>
+                <button type=“button”>Contact</button>
     </div>
-    <div class="expert-service">
+    <div class="expert-service margin title-p">
         <h1>Our Expert Services</h1>
         <p>
-            At Neovira Technical Services, we provide high-performance IT solutions tailored for SMEs. Our comprehensive services ensure your business operates smoothly and securely in today's digital landscape.
+            At Neovira Technical Services, we provide high-performance IT solutions tailored for SMEs. Our comprehensive services ensure your business operates smoothly and securely in today’s digital landscape.
         </p>
     </div>
-    <div class="comprehensive">
+    <div class="comprehensive margin title-p">
      <div class="itsolution">
             <h2>
             Comprehensive IT Solution for Your Business
@@ -32,83 +78,76 @@
             At Neovira Technical Services, we empower SMEs with high-performance IT solutions tailored to their unique needs. Our expert team is dedicated to ensuring your technology works seamlessly.
          </p>
      </div>
-    
-        <div class="Maitenance">
-             <h4>
+        <div class="Maitenance title-p rigth">
+            <h4 class="title-p">
              IT Support & Maitenance Services
             </h4>
              <p>
                 Our IT support ensures your systems run smoothly
              </p>
-                <h4>Cloud Solutions for Flexible Business Operations
-
+                <h4 class="">Cloud Solutions for Flexible Business Operations
                 </h4>
                 <p>
-                    Leverage the power of the cloud with us.  
+                    Leverage the power of the cloud with us.
                 </p>
         </div>
-        
         <div class="Network">
-            <h4>Network Configuration and Security Solutions</h4>
+        <h4 class="">Network Configuration and Security Solutions</h4>
          <p>
             we secure and optimize your network infrastructure
          </p>
-      
-         <h4>
+         <h4 class="">
          Cybersecurity to Protect Your Digital Assets
-            </h4>
+        </h4>
          <p>
          Safeguard your business from cyber threats effectively.
          </p>
         </div>
     </div>
-    <div class="Reliable"> 
+    <div class="Reliable margin rigth title-p container">
         <div>
          <h2>
-             Reliable IT Support & Maintenance Tailored for Your Business Needs 
+             Reliable IT Support & Maintenance Tailored for Your Business Needs
          </h2>
-                 <p>
-                Our IT Support & Maintenance services ensure your systems run smoothly and efficiently. With proactive monitoring and timely assistance, we help you minimize downtime and maximize productivity. 
+            <p class="">
+                Our IT Support & Maintenance services ensure your systems run smoothly and efficiently. With proactive monitoring and timely assistance, we help you minimize downtime and maximize productivity.
             </p>
         </div>
-         <img src="Neovira1.png" alt="" >
+         <img src="office.png" alt="" class="service-img">
     </div>
-<section>
+<section class="margin container tac title-p">
     <h2>
         Network Configuration and Security Solutions
     </h2>
     <p>
-        Our Network Configuration and Security services ensure your IT infrastructure is robust and secure. We tailor solutions to meet the unique needs of your business, safeguarding your data and enhancing connectivity.  
+        Our Network Configuration and Security services ensure your IT infrastructure is robust and secure. We tailor solutions to meet the unique needs of your business, safeguarding your data and enhancing connectivity.
     </p>
-    <p>
-     <button type="button">Protect your network with our expert solutions.</button>
-     <button type="button">Customized security protocols for your business needs.</button> 
-     <button type="button">Seamless integration for optimal network performance.</button>  
-    </p>
-    <img src="3f0624ab76cd688a899dbe9f19b42d5b 1.png" alt="" srcset="" width="400px">
+    <div>
+     <p>Protect your network with our expert solutions.</p>
+     <p>Customized security protocols for your business needs.</p>
+     <p>Seamless integration for optimal network performance.</p>
+    </div>
+    <img src="office.png" alt="" srcset="" class="service-img">
 </section>
-<section>
-    <img src="4cdde7b1893c24591692b443a1de261a 1.png" alt="" srcset="" width="400px">
+<section class="margin title-p rigth">
+    <img src="service2.png" alt="" srcset="" class="service-img">
     <h2> Empower Your Business with Cloud Solutions</h2>
     <p>Our Cloud Solutions provide flexibility and scalability tailored to your business needs. Experience seamless integration and enhanced collaboration with our cutting-edge technology.
-
     </p>
     <h3>Flexible Solutions</h3>
     <p>Adapt to changing demands with our customizable cloud services.
-
     </p>
     <h3>
         Secure Access
     </h3>
     <p>
-        Protect your data with our robust security measures in the cloud.  
+        Protect your data with our robust security measures in the cloud.
     </p>
-
 </section>
-<section>
+<section class="margin title-p rigth">
    <h2>
     Comprehensive Cybersecurity Solutions for Your Business
-   </h2> 
+   </h2>
    <p>
     Protect your business from evolving cyber threats with our tailored cybersecurity services. We ensure your data and systems remain secure and resilient.
    </p>
@@ -124,40 +163,102 @@
    <p>
     Robust backup solutions to safeguard your critical information against data loss.
    </p>
-   <img src="neovira2.png" alt="" srcset="" width="400px">
+   <img src="cybersecurity.png" alt="image cyber securité" srcset="" class="service-img">
 </section>
-<section>
+<section class="margin title-p rigth">
     <h2>
         Comprehensive Hardware & Software Solutions
     </h2>
     <p>
-        At Neovira Technical Services, we provide cutting-edge hardware and software solutions tailored to meet the unique needs of your business. Our offerings include everything from high-performance computers to the latest software applications, ensuring your operations run smoothly and efficiently. Trust us to equip your business with the tools necessary for success in today's competitive landscape.   
+        At Neovira Technical Services, we provide cutting-edge hardware and software solutions tailored to meet the unique needs of your business. Our offerings include everything from high-performance computers to the latest software applications, ensuring your operations run smoothly and efficiently. Trust us to equip your business with the tools necessary for success in today’s competitive landscape.
     </p>
-    <img src="8d1a674bf9d0cbcd38fabb68c56aab6b 1.png" alt="" srcset="" width="400px">
+    <img src="hardware-and-software.png" alt="" srcset="" class="service-img">
 </section>
-<section>
+<section class="margin title-p rigth">
     <h2>
         Transform Your Online Presence with Our Expert Web Development Services
     </h2>
     <p>
-        At Neovira Technical Services, we specialize in creating custom websites that elevate your business. Our solutions are tailored to meet the unique needs of SMEs, ensuring a robust online presence. 
+        At Neovira Technical Services, we specialize in creating custom websites that elevate your business. Our solutions are tailored to meet the unique needs of SMEs, ensuring a robust online presence.
     </p>
     <h3>
-        Custom Solutions 
+        Custom Solutions
     </h3>
     <p>
-        We design websites that reflect your brand and engage your audience effectively. 
+        We design websites that reflect your brand and engage your audience effectively.
     </p>
     <h3>
-        Responsive Design  
+        Responsive Design
     </h3>
     <p>
-        Our websites are optimized for all devices, ensuring a seamless user experience. 
+        Our websites are optimized for all devices, ensuring a seamless user experience.
     </p>
-    <img src="6ff3ec1681f9d845a8fb36120a20c0b0 1.png" alt="" srcset="" width="400px">
-
+    <img src="web-services.png" alt="" srcset="" class="service-img">
 </section>
+<a href="https://wa.me/27607667704?text=Bonjour%20j%27ai%20une%20question%20sur..." 
+    class="whatsapp-btn" 
+    target="_blank"
+    aria-label="Contact WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<footer>
+    <div class="logo-cordoned-link space-left">
+        <div class="logo-cordoned">
+            <div class="logo-img title-p">
+                <img src="logo.png" alt="company logo" class="logo">
+            </div>
+            <div class="adress">
+                <p class="adress-title">
+                    Adress :
+                </p>
+                <p class="adress-cordoned">
+                    28 Hill Street, Kuils River, 7580
+                </p>
+            </div>
+            <div class="contacts">
+                <p class="contacts-phone">
+                    +27 60 766 7704
+                </p>
+                <p class="contacts-email">
+                    meyerjp@neovira.co.za
+                </p>
+            </div>
 
+        </div>
+        <div class="link">
+            <div class="link-home padding-bottom">
+                <a href="home.html">
+                    Home
+                </a>
+            </div>
+            <div class="link-aboutus padding-bottom">
+                <a href="about-us.html">
+                    About us
+                </a>
+            </div>
+            <div class="link-service padding-bottom">
+                <a href="neo.html">
+                    Services
+                </a>
+            </div>
+            <div class="contact.html padding-bottom">
+                <a href="contact.html">
+                    Contact
+                </a>
+            </div>
 
+        </div>
+
+    </div>
+    <div class="border">
+
+    </div>
+    <div class="copyrighting-other about-border space-left">
+        <p class="copyrighting rigth">
+            © 2025 Neovira. All rights reserved. 
+        </p>
+    </div>
+
+</footer>  
 </body>
 </html>

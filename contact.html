@@ -4,56 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="neo.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="index.js"></script>
     <title>contact</title>
 </head>
 <body>
-<div class="contacts">
-    <h1>Contact Neovira</h1>
-    <p>We are here to answer all your questions and help you find the IT solutions that suit your needs. Feel free to contact us to learn more about our services.
+    <header class="flex-space padding">
+        <div class="logo-img">
+            <img src="logo.png" alt="logo" class="logo">
+        </div>
+        <div class="nav-link flex-space gap padding visibility">
+            <div class="nav-link-homePage">
+                <a href="home.html"> 
+                    Home
+                </a>
+            </div>
+            <div class="nav-link-servicesPage">
+                <a href="neo.html">
+                    Services
+                </a>
+            </div>
+            <div class="nav-link">
+                <a href="about-us.html">
+                    About us
+                </a>
+            </div>
+        </div>
+        <div class="contact-btn visibility">
+            <button class="contact"> Contact us </button>
+        </div>
+        <div class="burger-menu">
+            <i class="bi bi-filter-right" id="burger-icon">
 
-    </p>
-
-</div>
-    <div class="about">
-        <div>
-        <h2>
-            Contact Us
-        </h2>
-        <p>Email :meyerjp@neovira.co.za </p>
-        <p> Cell Phone : +27 61 3481 578</p>
-        <p>Telephone: +27 60 766 7704</p>
-        <p> Office : 28 Hill Street , Kuils River, 7580
-
+            </i>
+        </div>
+    </header>
+    
+            <!-- <div class="m border about-border"></div> -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close-modal"></span>
+                    <div class="modal-links">
+                        <a href="home.html">Home</a>
+                        <a href="neo.html">Services</a>
+                        <a href="about-us.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                    </div>
+                </div>
+            </div>
+    
+   
+    <div class="contacts section">
+        <h1 class="p-r">Contact Neovira</h1>
+        <p class="ml">We are here to answer all your questions and help you find the IT solutions that suit your needs. Feel free to contact us to learn more about our services.
         </p>
-        </div>
-        <div>
-        <img src="IMG_9816.JPG" alt="" srcset="">
-        </div>
     </div>
-    <div class="formulaire">
-        <form action="#">
-            <h2>
+        <div class="about red headslide gap">
+            <div class="content contact-ml">
+            <h2 class="title-p">
                 Contact Us
             </h2>
-            <p>
-                Let's Take Your Business to the Next Level with reliable IT Support
-            </p>
-            <div class="child1">
-                <label for="">Name</label>
-                <input type="text" required>
+            <div class="info">
+                <h4>
+                    Email :
+                </h4>
+                <p> meyerjp@neovira.co.za </p>
+
             </div>
-           <div class="child1">
-                <label for="">Email</label>
-                <input type="text" required>
-           </div>
-           <div class="Message">
-                <label for="">Message</label>
-                 <input type="text" required >
-           </div>
-            
-            <button type="submit">Submit</button>
-          
-        </form>
-    </div>
+            <div class="info">
+                <h4>
+                    cell Phone :
+                </h4>
+                <p>
+                    +27 61 3481 578
+                </p>
+
+            </div>
+            <div class="info">
+                <h4>
+                    Telephone :
+                </h4>
+                <p> +27 60 766 7704 </p>
+
+            </div>
+            <div class="info">
+                <h4>
+                    Office :
+                </h4>
+                <p> 28 Hill Street , Kuils River, 7580 </p>
+
+            </div>
+            </div>
+            <div>
+                <img src="customer.png"alt="" srcset="">
+            </div>
+        </div>
+        <div class="formulaire red headslide">
+            <img src="contact2.png" alt="">
+            <form action="#" class="">
+                <!-- <h2>
+                    Contact Us
+                </h2> -->
+                <p>
+                    Let's Take Your Business to the Next Level with reliable IT Support
+                </p>
+            <div class="input">
+                <div class="child1 title-p">
+                    <label for="">Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="child1">
+                    <label for="">Email</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="Message">
+                    <label for="">Message</label>
+                    <input type=“text” required >
+            </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <a href="https://wa.me/27607667704?text=Bonjour%20j%27ai%20une%20question%20sur..." 
+            class="whatsapp-btn" 
+            target="_blank"
+            aria-label="Contact WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <footer>
+            <div class="logo-cordoned-link space-left">
+                <div class="logo-cordoned">
+                    <div class="logo-img title-p">
+                        <img src="logo.png" alt="company logo" class="logo">
+                    </div>
+                    <div class="adress">
+                        <p class="adress-title">
+                            Adress :
+                        </p>
+                        <p class="adress-cordoned">
+                            28 Hill Street, Kuils River, 7580
+                        </p>
+                    </div>
+                    <div class="contacts">
+                        <p class="contacts-phone">
+                            +27 60 766 7704
+                        </p>
+                        <p class="contacts-email">
+                            meyerjp@neovira.co.za
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <div class="link-home padding-bottom">
+                        <a href="home.html">
+                            Home
+                        </a>
+                    </div>
+                    <div class="link-aboutus padding-bottom">
+                        <a href="about-us.html">
+                            About us
+                        </a>
+                    </div>
+                    <div class="link-service padding-bottom">
+                        <a href="neo.html">
+                            Services
+                        </a>
+                    </div>
+                    <div class="contact.html padding-bottom">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="border">
+    
+            </div>
+            <div class="copyrighting-other about-border space-left">
+                <p class="copyrighting rigth">
+                    © 2025 Neovira. All rights reserved. 
+                </p>
+            </div>
+    
+        </footer>    
 </body>
 </html>
