@@ -87,5 +87,76 @@ gap: 10px;
     height: 200px;
     object-fit: cover;
 }
+.about{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color:#022b61;
+    
+    color: antiquewhite;
+    padding: 10px;
+}
+.about h2{
+    border: solid red;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    color: antiquewhite;
+    background-color: black;
+    justify-content: center;
+    
+}
+.Message{
+    display: flex;
+    flex-direction: column;
+}
+
+form .Message input{
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+}
+.child1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 300px;
+  
+}
+form input{
+    border-radius: 8px;
+    
+}
+.about img{
+    content: ;
+    margin: 10px;
+    border: solid red;
+    border-radius: 12px;
+    box-shadow: inset;
+}
+.contacts{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+
+}
+.contacts p{
+    background-color: grey;
+    color: antiquewhite;
+
+    
+}
+.contacts h1{
+    color: antiquewhite;
+    
+}
+
 
 
