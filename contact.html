@@ -3,46 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="neo.css">
+    <title>contact</title>
+    <script defer src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script defer src="index.js"></script>
-    <title>contact</title>
 </head>
-<body>
-    <header class="flex-space padding">
-        <div class="logo-img">
-            <img src="logo.png" alt="logo" class="logo">
-        </div>
-        <div class="nav-link flex-space gap padding visibility">
-            <div class="nav-link-homePage">
-                <a href="home.html"> 
-                    Home
-                </a>
+<body class="bg-black text-white">
+    <header class="flex justify-between w-full py-2 mx-2 px-1 md:mx-2 lg:">
+        <img class="size-[3rem] md:size-[4rem] lg:size-[5rem]" src="logo.png" alt="company logo">
+        <div class="hidden md:flex md:justify-between md:items-center">
+            <div class="flex justify-between items-center space-x-3">
+                <div>
+                    <a href="home.html"> Acceuil </a>
+                </div>
+                <div>
+                    <a href="neo.html"> services </a>
+                </div>
+                <div>
+                    <a href="about-us.html"> About Us </a>
+                </div>
             </div>
-            <div class="nav-link-servicesPage">
-                <a href="neo.html">
-                    Services
-                </a>
+            <div class="absolute right-5">
+                <button class="fade-text contact bg-yellow-500 rounded-[0.5rem] p-2">
+                    contact us
+                </button>
             </div>
-            <div class="nav-link">
-                <a href="about-us.html">
-                    About us
-                </a>
-            </div>
-        </div>
-        <div class="contact-btn visibility">
-            <button class="contact"> Contact us </button>
         </div>
         <div class="burger-menu">
-            <i class="bi bi-filter-right" id="burger-icon">
+            <i class="burger-icon bi bi-filter-right text-[2rem] mr-4 md:hidden">
 
             </i>
         </div>
     </header>
-    
-            <!-- <div class="m border about-border"></div> -->
+    <main class="mx-3 md:mx-7 lg:flex lg:flex-col lg:space-y-8">
+                <!-- <div class="m border about-border"></div> -->
             <div id="modal" class="modal">
                 <div class="modal-content">
                     <span class="close" id="close-modal"></span>
@@ -54,144 +50,152 @@
                     </div>
                 </div>
             </div>
+                
+
+        <div class="my-6">
+            <h1 class="font-bold text-4xl capitalize md:w-[30rem] md:text-4xl lg:text-5xl">Contact Neovira</h1>
+            <p class="my-2 md:w-[50%] lg:w-[55%]">
+                We are here to answer all your questions and help you find the IT solutions that suit your needs. Feel free to contact us to learn more about our services.
+            </p>
+        </div>
+        <div class="mb-16 mt-4 md:flex md:items-center md:justify-between">
+            <div class="">
+                <h2 class="font-bold text-3xl md:font-bold  md:text-5xl lg:w-[40rem]">
+                    Contact Us
+                </h2>
+                <div class="flex flex-col space-y-8 my-2">
+                    <div class="">
+                        <h4 class="text-xl font-semibold my-1 pt-2">
+                            Email :
+                        </h4>
+                        <p> meyerjp@neovira.co.za </p>
     
- <div class="view">
-    <div class="contacts section">
-        <h1 class="p-r">Contact Neovira</h1>
-        <p class="ml">We are here to answer all your questions and help you find the IT solutions that suit your needs. Feel free to contact us to learn more about our services.
-        </p>
-    </div>
-        <div class="about red headslide gap">
-            <div class="content contact-ml">
-            <h2 class="title-p">
-                Contact Us
-            </h2>
-            <div class="info">
-                <h4>
-                    Email :
-                </h4>
-                <p> meyerjp@neovira.co.za </p>
-
-            </div>
-            <div class="info">
-                <h4>
-                    cell Phone :
-                </h4>
-                <p>
-                    +27 61 3481 578
-                </p>
-
-            </div>
-            <div class="info">
-                <h4>
-                    Telephone :
-                </h4>
-                <p> +27 60 766 7704 </p>
-
-            </div>
-            <div class="info">
-                <h4>
-                    Office :
-                </h4>
-                <p> 28 Hill Street , Kuils River, 7580 </p>
-
-            </div>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-xl font-semibold my-1 pt-2">
+                            Cell Phone :
+                        </h4>
+                        <p>
+                            +27 61 3481 578
+                        </p>
+    
+                    </div>
+                    <div class="info">
+                        <h4 class="text-xl font-semibold my-1 pt-2">
+                            Telephone :
+                        </h4>
+                        <p> +27 60 766 7704 </p>
+    
+                    </div>
+                    <div class="info">
+                        <h4 class="text-xl font-semibold my-1 pt-2">
+                            Office :
+                        </h4>
+                        <p> 28 Hill Street , Kuils River, 7580 </p>
+    
+                    </div>                    
+                </div>
             </div>
             <div>
-                <img src="customer.png"alt="" srcset="">
+                <img src="customer.png"alt="" srcset="" class="h-[20rem] w-full rounded-xl md:w-[30rem] md:h-[27rem] lg:w-[40rem]">
             </div>
         </div>
-        <div class="formulaire red headslide">
-            <img src="contact2.png" alt="">
-            <form action="#" class="">
+        <div class="md:flex md:items-center md:justify-between md:gap-4 md:my-30 lg:justify-between lg:my-40">
+            <img src="contact2.png" alt="" class="h-[20rem] w-full rounded-xl md:w-[25rem] md:h-[27rem] lg:w-[40rem]">
+            <form action="#" class="flex flex-col items-center justify-center w-full h-auto md:items-start lg:ml-[7rem]">
                 <!-- <h2>
                     Contact Us
                 </h2> -->
-                <p>
+                <p class="text-center mt-3">
                     Let's Take Your Business to the Next Level with reliable IT Support
                 </p>
-            <div class="input">
-                <div class="child1 title-p">
-                    <label for="">Name</label>
-                    <input type="text" required>
+                <div class="flex flex-col gap-4 items-center md:ml-[2rem]">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <label for="">Name</label>
+                            <input class="w-[21rem] py-2 rounded-md border border-white bg-black md:w-[24rem] lg:w-[27rem]" type="text" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="">Email</label>
+                            <input class="w-[21rem] py-2 rounded-md border border-white bg-black md:w-[24rem] lg:w-[27rem]" type="text" required>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center md:items-start">
+                        <label for="area" class="text-left">Message</label>
+                        <textarea class="w-[21rem] h-[10rem] p-2 rounded-md border border-white bg-black md:w-[24rem] lg:w-[27rem]" name="Message" id="area" required></textarea>
+                    </div>                    
                 </div>
-                <div class="child1">
-                    <label for="">Email</label>
-                    <input type="text" required>
-                </div>
-            </div>
-            <div class="Message">
-                    <label for="">Message</label>
-                    <input type=“text” required >
-            </div>
-                <button type="submit">Submit</button>
+                <button type="submit" class="bg-[#F4C843] mt-4 px-5 py-2 rounded-md md:ml-[2rem]">Submit</button>
             </form>
         </div>
+
         <a href="https://wa.me/27607667704?text=Bonjour%20j%27ai%20une%20question%20sur..." 
-            class="whatsapp-btn" 
-            target="_blank"
-            aria-label="Contact WhatsApp">
-            <i class="fab fa-whatsapp"></i>
+        class="whatsapp-btn flex items-center justify-center fixed bottom-4 right-5 size-16 z-50 rounded-full bg-[#25d366]" 
+        target="_blank"
+        aria-label="Contact WhatsApp"
+        >
+            <i class="fab fa-whatsapp text-4xl"></i>
         </a>
- </div>
-        <footer>
-            <div class="logo-cordoned-link space-left">
-                <div class="logo-cordoned">
-                    <div class="logo-img title-p">
-                        <img src="logo.png" alt="company logo" class="logo">
-                    </div>
-                    <div class="adress">
-                        <p class="adress-title">
-                            Adress :
-                        </p>
-                        <p class="adress-cordoned">
-                            28 Hill Street, Kuils River, 7580
-                        </p>
-                    </div>
-                    <div class="contacts">
-                        <p class="contacts-phone">
-                            +27 60 766 7704
-                        </p>
-                        <p class="contacts-email">
-                            meyerjp@neovira.co.za
-                        </p>
-                    </div>
-    
+
+    </main>
+    <footer class="mx-3  md:mx-7 lg:mx-9 mt-[4rem]">
+        <div class="flex flex-col space-y-3 md:flex-row md:items-center md:justify-between">
+            <div class="">
+                <div class="">
+                    <img src="logo.png" alt="company logo" class="logo size-[3rem] md:size-[4rem] lg:size-[5rem]">
                 </div>
-                <div class="link">
-                    <div class="link-home padding-bottom">
-                        <a href="home.html">
-                            Home
-                        </a>
-                    </div>
-                    <div class="link-aboutus padding-bottom">
-                        <a href="about-us.html">
-                            About us
-                        </a>
-                    </div>
-                    <div class="link-service padding-bottom">
-                        <a href="neo.html">
-                            Services
-                        </a>
-                    </div>
-                    <div class="contact.html padding-bottom">
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </div>
-    
+                <div class="flex items-center space-x-2">
+                    <p class="">
+                        Adress :
+                    </p>
+                    <p class="">
+                        28 Hill Street, Kuils River, 7580
+                    </p>
+                </div>
+                <div class="">
+                    <p class="">
+                        +27 60 766 7704
+                    </p>
+                    <p class="">
+                        meyerjp@neovira.co.za
+                    </p>
                 </div>
     
             </div>
-            <div class="border">
+            <div class="">
+                <div class="">
+                    <a href="home.html">
+                        Home
+                    </a>
+                </div>
+                <div class="">
+                    <a href="about-us.html">
+                        About us
+                    </a>
+                </div>
+                <div class="">
+                    <a href="neo.html">
+                        Services
+                    </a>
+                </div>
+                <div class="">
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </div>
     
             </div>
-            <div class="copyrighting-other about-border space-left">
-                <p class="copyrighting rigth">
-                    © 2025 Neovira. All rights reserved. 
-                </p>
-            </div>
     
-        </footer>    
+        </div>
+        <div class="border mt-4 mb-2">
+    
+        </div>
+        <div class="copyrighting-other about-border space-left">
+            <p class="copyrighting rigth">
+                © 2025 Neovira. All rights reserved. 
+            </p>
+        </div>
+    
+    </footer>
 </body>
 </html>
